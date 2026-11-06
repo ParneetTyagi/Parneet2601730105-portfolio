@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parneet Tyagi | Full Stack Developer Portfolio</title>
+  <meta name="description" content="Responsive personal portfolio built with Flexbox, CSS Grid and CSS animations.">
+  <!-- Google Font: Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ HEADER (Flexbox: logo + nav) ============ -->
+  <header class="header">
+    <a href="#home" class="logo">My Portfolio</a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ============ HERO (Flexbox: text left, image right) ============ -->
+    <section class="hero" id="home">
+      <div class="hero-text">
+        <h1>Hi, I am<br><span class="highlight">Full Stack Developer</span></h1>
+        <p>Building modern, responsive web applications with the MERN stack.</p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn">View my work</a>
+          <a href="#contact" class="btn btn-outline">Contact me</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="avatar.svg" alt="Illustration of Parneet Tyagi, the portfolio owner">
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <h2>About Me</h2>
+      <p class="about-text">
+        Hello! My name is Parneet Tyagi, and I am currently learning web development. This is my
+        portfolio website, where I showcase my passion for creating interactive and responsive
+        web pages. I am a B.Tech student at KR Mangalam University, deeply interested in
+        technology and coding.
+      </p>
+      <p class="about-text">
+        I love exploring new skills every day and always aim to improve my knowledge of web
+        development. With a hardworking and consistent mindset, I am determined to grow as a
+        developer and build creative projects that make a real impact.
+      </p>
+    </section>
+
+    <!-- ============ SKILLS (CSS Grid) ============ -->
+    <section class="section" id="skills">
+      <h2>My Skills</h2>
+      <div class="grid skills-grid">
+        <div class="card skill"><h3>HTML</h3><span>Intermediate</span></div>
+        <div class="card skill"><h3>CSS</h3><span>Intermediate</span></div>
+        <div class="card skill"><h3>JavaScript</h3><span>Learning</span></div>
+        <div class="card skill"><h3>React</h3><span>Learning</span></div>
+        <div class="card skill"><h3>Node.js</h3><span>Beginner</span></div>
+        <div class="card skill"><h3>Git &amp; GitHub</h3><span>Beginner</span></div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS (CSS Grid) ============ -->
+    <section class="section" id="projects">
+      <h2>My Projects</h2>
+      <div class="grid projects-grid">
+        <article class="card project">
+          <h3>Project 1</h3>
+          <p>A simple HTML &amp; CSS webpage that practises semantic structure and basic styling.</p>
+          <span class="tags">HTML · CSS</span>
+        </article>
+        <article class="card project">
+          <h3>Project 2</h3>
+          <p>Another awesome mini project: an interactive to-do list built with JavaScript.</p>
+          <span class="tags">HTML · CSS · JS</span>
+        </article>
+        <article class="card project">
+          <h3>Project 3</h3>
+          <p>A responsive landing page using Flexbox, Grid and media queries.</p>
+          <span class="tags">Flexbox · Grid</span>
+        </article>
+        <article class="card project">
+          <h3>Project 4</h3>
+          <p>A weather app that fetches live data from a public API.</p>
+          <span class="tags">JavaScript · API</span>
+        </article>
+        <article class="card project">
+          <h3>Project 5</h3>
+          <p>A small React component library with reusable buttons and cards.</p>
+          <span class="tags">React</span>
+        </article>
+        <article class="card project">
+          <h3>Project 6</h3>
+          <p>A MERN stack notes app with user login (work in progress).</p>
+          <span class="tags">MongoDB · Express · React · Node</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section" id="contact">
+      <h2>Contact Me</h2>
+      <form class="contact-form" action="#" method="post">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Write your message" required></textarea>
+
+        <button type="submit" class="btn">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <p>&copy; 2026 Parneet Tyagi. All rights reserved.</p>
+    <ul class="footer-links">
+      <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a href="#home">Back to top</a></li>
+    </ul>
+  </footer>
+
+</body>
+</html>
